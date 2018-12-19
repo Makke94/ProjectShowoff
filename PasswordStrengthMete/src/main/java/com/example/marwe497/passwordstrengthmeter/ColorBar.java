@@ -101,6 +101,17 @@ public class ColorBar extends LinearLayout {
      * Initializes the bar wih default values
      */
     private void init(){
+        int[] id = new int[9];
+        for(int i = 0; i < 10; i++){
+            id[i] = i;
+        }
+        tVResult.setId(id[0]);
+        tVDesc.setId(id[1]);
+
+        bar.setId(id[2]);
+
+
+
         this.setOrientation(LinearLayout.VERTICAL);
 
         LinearLayout horLayout = new LinearLayout(getContext());

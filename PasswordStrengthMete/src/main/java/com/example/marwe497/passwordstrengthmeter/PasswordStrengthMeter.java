@@ -1,5 +1,6 @@
 package com.example.marwe497.passwordstrengthmeter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
 import android.text.Editable;
@@ -100,7 +101,10 @@ public class PasswordStrengthMeter extends LinearLayout {
 
     private boolean allowed = false;
 
+    @SuppressLint("ResourceType")
     private void init(){
+        edTxt.setId(10);
+
         algoritm = new DefaultAlgoritm();
         this.setOrientation(LinearLayout.VERTICAL);
         chooseApassword.setText("Choose a password: ");
