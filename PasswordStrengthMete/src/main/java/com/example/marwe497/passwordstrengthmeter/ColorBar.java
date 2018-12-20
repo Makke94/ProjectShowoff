@@ -101,7 +101,7 @@ public class ColorBar extends LinearLayout {
      * Initializes the bar wih default values
      */
     private void init(){
-        int[] id = new int[9];
+        int[] id = new int[10];
         for(int i = 0; i < 10; i++){
             id[i] = i;
         }
